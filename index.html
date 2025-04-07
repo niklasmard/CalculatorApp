@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay(this)" class="parentheses-btn">(</button>
+            <button onclick="appendToDisplay(this)" class="parentheses-btn">)</button>
+            <button onclick="appendToDisplay(this)" class="operator-btn">^</button>
+            <button onclick="appendToDisplay(this)" class="operator-btn">+</button>
+            <button onclick="appendToDisplay(this)">7</button>
+            <button onclick="appendToDisplay(this)">8</button>
+            <button onclick="appendToDisplay(this)">9</button>
+            <button onclick="appendToDisplay(this)" class="operator-btn">-</button>
+            <button onclick="appendToDisplay(this)">4</button>
+            <button onclick="appendToDisplay(this)">5</button>
+            <button onclick="appendToDisplay(this)">6</button>
+            <button onclick="appendToDisplay(this)" class="operator-btn">*</button>
+            <button onclick="appendToDisplay(this)">1</button>
+            <button onclick="appendToDisplay(this)">2</button>
+            <button onclick="appendToDisplay(this)">3</button>
+            <button onclick="appendToDisplay(this)" class="operator-btn">/</button>
+            <button onclick="appendToDisplay(this)">0</button>
+            <button onclick="appendToDisplay(this)">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
